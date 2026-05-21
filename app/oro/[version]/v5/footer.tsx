@@ -19,7 +19,7 @@ export default function Footer() {
 
 					<div className="flex justify-center order-1 lg:order-2">
 						<Image
-							src="/images/v21/logo-alianca-divergente.png"
+							src="/images/oro/v5/logo_resgate_dos_otimistas.png"
 							alt="Logomarca Aliança Divergente"
 							width={220}
 							height={28}
@@ -72,7 +72,7 @@ export default function Footer() {
 					</h3>
 
 					<p className="leading-relaxed max-w-[1000px] mx-auto">
-						Os resultados podem variar de pessoa para pessoa. Este método tem caráter educacional e de desenvolvimento pessoal, não garantindo ganhos financeiros imediatos ou específicos. O sucesso depende da aplicação prática de cada participante. Este site não é afiliado, endossado ou patrocinado pelo Google ou Meta.
+						Os resultados podem variar de pessoa para pessoa. Este método tem caráter educacional e de desenvolvimento pessoal, não garantindo ganhos financeiros imediatos ou específicos. O sucesso depende da aplicação prática de cada participante. Este site não é afiliado, endossado ou patrocinado pelo Google Ads, Meta Ads ou TikTok Ads.
 					</p>
 				</div>
 
