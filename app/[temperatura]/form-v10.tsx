@@ -59,14 +59,11 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
 
   const logoSrc = LOGO_BY_VARIANT[logoVariant];
 
-  // ************* INICIO - CODIGO LEGADO ************* 
-  // Capturar UTMs da queryString
   useEffect(() => {
     if (searchParams) {
       const utmParams: Record<string, string> = {};
       let hasUtm = false;
 
-      // Lista de parâmetros UTM comuns
       const utmKeys = [
         "utm_source",
         "utm_medium",
@@ -76,7 +73,6 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
         "utm_id",
       ];
 
-      // Verificar cada parâmetro UTM
       utmKeys.forEach((key) => {
         const value = searchParams.get(key);
         if (value) {
@@ -85,7 +81,6 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
         }
       });
 
-      // Adicionar outros parâmetros da query que não são UTM
       searchParams.forEach((value, key) => {
         if (!utmKeys.includes(key) && key !== "temperatura") {
           utmParams[key] = value;
@@ -93,14 +88,12 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
         }
       });
 
-      // Definir formFields apenas se houver UTMs
       if (hasUtm) {
         console.log("UTM params:", utmParams);
         setFormFields(utmParams);
       }
     }
   }, [searchParams]);
-  // ************* FINAL - CODIGO LEGADO ************* 
 
   useEffect(() => {
     if (params && params.temperatura) {
@@ -148,7 +141,6 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
       const { utmObject, getUtmValue } = getTrackingUtmInfo();
       const cookies = getTrackingCookies();
 
-      // ************* INICIO - CODIGO LEGADO *************
       const payloadDynamo: Record<string, any> = {
         email: data.email,
         phone: data.normalizedPhone,
@@ -163,7 +155,6 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
         path: window.location.pathname,
       };
 
-      // Adicionar formFields ao payload apenas se existir
       if (formFields) {
         payloadDynamo.formFields = formFields;
       }
@@ -179,7 +170,6 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
       if (!responseDynamo.ok) {
         throw new Error("Falha ao registrar lead no dynamo");
       }
-      // ************* FINAL - CODIGO LEGADO *************
 
       const payload: LeadRegistrationPayload = {
         email: data.email,
@@ -234,97 +224,11 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
           : "bg-gradient-to-r from-[#f4f0e1] via-[#f4f0e1] to-[#f4f0e1]"
           }`}
       >
-        {/* Background com overlay */}
         <div className="absolute inset-0 bg-[url('/images/paper-texture.png')] bg-cover bg-center opacity-15"></div>
-
-        <div className="absolute bottom-500 left-0 hidden md:block w-[200px] h-[200px] bg-no-repeat">
-          <Image
-            src="/images/bg-left.png"
-            alt="Background top right and left"
-            width={80}
-            height={200}
-            priority
-            className="object-contain"
-            style={{
-              transformOrigin: "center",
-            }}
-          />
-        </div>
-
-        <div className="absolute bottom-[500px] hidden md:block right-0 w-[150px] h-[200px] bg-no-repeat">
-          <Image
-            src="/images/bg-right-bottom.png"
-            alt="Background top right and left"
-            width={150}
-            height={200}
-            priority
-            className="object-contain"
-            style={{
-              transformOrigin: "center",
-            }}
-          />
-        </div>
-
-        <div className="absolute top-0 right-0 w-[400px] h-[200px] bg-no-repeat hidden md:block">
-          <Image
-            src="/images/bg-top-right.png"
-            alt="Background top right and left"
-            width={400}
-            height={200}
-            priority
-            className="object-contain"
-            style={{
-              transformOrigin: "center",
-            }}
-          />
-        </div>
-
-        <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-no-repeat show md:hidden">
-          <Image
-            src="/images/bg-top-right.png"
-            alt="Background top right and left"
-            width={200}
-            height={200}
-            priority
-            className="object-contain"
-            style={{
-              transformOrigin: "center",
-            }}
-          />
-        </div>
-
-        <div className="absolute top-0 left-0 w-[500px] h-[200px] bg-no-repeat show md:hidden">
-          <Image
-            src="/images/bg-top-left.png"
-            alt="Background top right and left"
-            width={300}
-            height={400}
-            priority
-            className="object-contain"
-            style={{
-              transformOrigin: "center",
-            }}
-          />
-        </div>
-
-        <div className="absolute top-0 left-0 w-[500px] h-[200px] bg-no-repeat hidden md:block">
-          <Image
-            src="/images/bg-top-left.png"
-            alt="Background top right and left"
-            width={900}
-            height={400}
-            priority
-            className="object-contain"
-            style={{
-              transformOrigin: "center",
-            }}
-          />
-        </div>
 
         <div
           className={`container mx-auto px-4 py-10 sm:py-20 md:py-32 relative`}
         >
-          {/* Coluna única centralizada ou duas colunas */}
           <div className="w-full max-w-2xl mx-auto mb-12">
             <div className="mb-4 sm:mb-8 flex justify-center">
               <Image
@@ -340,6 +244,7 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
                 }}
               />
             </div>
+
             <div className="text-center my-4 sm:my-8">
               {!titleRedLine ? (
                 <>
@@ -387,17 +292,18 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
                 </>
               )}
             </p>
+
             <div
               className={`${isDark ? "text-[#f4f0e1]" : "text-[#07242c]"} max-w-md mx-auto sm:text-lg text-base mb-4 font-medium text-center`}
             >
               <span
                 className={`${isDark ? "text-[#f4f0e1]" : "text-[#07242c]"} text-center`}
               >
-                Preencha os dados abaixo para fazer o seu diagnóstico de
-                bloqueio de permissão gratuito e destrave seu teto financeiro
-                imediatamente
+                Preencha os dados abaixo para se inscrever gratuitamente para o
+                evento:
               </span>
             </div>
+
             <div className="flex w-full max-w-md mx-auto justify-center">
               <LeadCaptureForm
                 formName={launch}
@@ -415,90 +321,6 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
               style={{ color: "#C0964B" }}
             >
               ONLINE E GRATUITO. 15, 16 e 17 de JUNHO ÀS 19H55
-            </p>
-          </div>
-        </div>
-        {/* <footer className="w-full mb-24 max-w-3xl mx-auto">
-          <div className="w-full mb-6">
-            <div
-              className="border-t border-[#2a4447] w-full"
-              style={{
-                background:
-                  "linear-gradient(to right, transparent, #2a4447, transparent)",
-              }}
-            ></div>
-          </div>
-          <div className="text-center text-[#f4f0e1] text-xs md:text-sm font-serif tracking-wide pb-6">
-            <div className={`${isDark ? "text-[#f4f0e1]" : "text-[#07242c]"}`}>
-              COPYRIGHT © 2025. O RESGATE DOS OTIMISTAS.
-            </div>
-            <div className={`${isDark ? "text-[#f4f0e1]" : "text-[#07242c]"}`}>
-              TODOS OS DIREITOS RESERVADOS.
-            </div>
-          </div>
-        </footer> */}
-        <div className="w-full pb-6">
-          <footer
-            className="
-          container mx-auto
-          flex md:flex-row flex-col
-          items-center justify-between
-          gap-6 w-full md:gap-2
-        "
-          >
-            <div
-              className="text-[14px] text-center md:text-left leading-[135%] font-mulish hidden md:block">
-              Copyright © O Levante dos Improváveis. <br />
-              Todos os direitos reservados.
-            </div>
-
-            <Image src={logoSrc} alt="Risk" width={250} height={32} />
-
-            <div className="text-[14px] text-center md:text-left leading-[135%] font-mulish block md:hidden">
-              Copyright © O Levante dos Improváveis. <br />
-              Todos os direitos reservados.
-            </div>
-
-            <div className="flex flex-col items-center md:items-start space-x-2">
-              <div className="flex items-center space-x-2">
-                <Link
-                  href="/politica-de-privacidade"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[14px] text-center md:text-left leading-[135%] font-mulish transition-colors duration-200 hover:text-[#C0964B]"
-                >
-                  Política de privacidade
-                </Link>
-
-                <span className="text-[14px] text-center md:text-left leading-[135%] font-mulish">|</span>
-
-                <Link
-                  href="/termos-de-uso"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[14px] text-center md:text-left leading-[135%] font-mulish transition-colors duration-200 hover:text-[#C0964B]"
-                >
-                  Termos de uso
-                </Link>
-              </div>
-
-              <p className="text-[12px] text-center md:text-left leading-[135%] font-mulish">
-                AEON LTDA CNPJ nº 48.424.807/0001-88
-              </p>
-            </div>
-          </footer>
-
-          <div className="container mx-auto w-full mt-6 md:mt-8 px-4 md:px-0">
-            <p className="font-mulish font-bold text-[14px] text-center md:text-left leading-[135%] mb-2">
-              AVISO LEGAL:
-            </p>
-
-            <p className="font-mulish text-[14px] text-center md:text-left leading-[135%]">
-              Os resultados podem variar de pessoa para pessoa. Este método tem
-              caráter educacional e de desenvolvimento pessoal, não garantindo
-              ganhos financeiros imediatos ou específicos. O sucesso depende da
-              aplicação prática de cada participante. Este site não é afiliado,
-              endossado ou patrocinado pelo Google ou Meta.
             </p>
           </div>
         </div>

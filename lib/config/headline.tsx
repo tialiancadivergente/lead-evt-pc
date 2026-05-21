@@ -17,15 +17,15 @@ export const Headline: IHeadline[] = [
       <p
         className={`text-3xl md:text-4xl uppercase font-bold mx-auto leading-10 md:-leading-10 `}
       >
-        Pare de assistir pessoas que sabem menos do que você ganharem mais
+        Descubra o que separa profissionais estagnados daqueles que alcançam o próximo nível.
       </p>
     ),
     text: (
       <p className={`text-2xl md:text-xl md:uppercase capitalize text-center`}>
-        Você não está ficando para trás por falta de conhecimento ou de força de
-        vontade,{" "}
+        Nem sempre a dificuldade está na falta de esforço. Em muitos
+        casos,{" "}
         <span className="text-[#c0964b]">
-          você está ficando para trás por falta de permissão.
+          ela pode estar relacionada à forma como enxergamos nossas possibilidades e escolhas.
         </span>
       </p>
     ),
@@ -80,7 +80,7 @@ export const Headline: IHeadline[] = [
     ),
     text: (
       <p>
-        Descubra como <span className="uppercase font-bold">aumentar o seu nível de permissão</span> e melhorar seus resultados nas finanças, nos relacionamentos e na saúde.
+        Descubra como <span className="uppercase font-bold">aumentar o seu nível de permissão</span> e melhorar seus resultados nas finanças, nos relacionamentos e na saúde.
       </p>
     ),
   },

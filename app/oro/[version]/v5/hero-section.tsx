@@ -31,7 +31,7 @@ export default function HeroSection({
 			<div
 				className={`mx-auto sm:px-4 2md:pt-6 pt-2 relative lg:w-[1080px] w-full flex justify-center md:justify-start`}
 			>
-				<div className="w-full 2md:max-w-[528px] max-w-[440px]">
+				<div className="w-full 2md:max-w-[560px] max-w-[520px]">
 					<div className="-mt-[20px] md:-mt-[12px] flex justify-center md:justify-start">
 						<Image
 							src="/images/oro/v5/logo_resgate_dos_otimistas.png"
@@ -74,10 +74,10 @@ export default function HeroSection({
 							<>
 								Descubra como{" "}
 								<span className="font-bold text-[#C0964B]">
-									AUMENTAR O SEU NÃVEL DE PERMISSÃƒO
+									AUMENTAR O SEU NÍVEL DE PERMISSÃO
 								</span>{" "}
-								e melhorar seus resultados nas finanÃ§as, nos relacionamentos e
-								na saÃºde.
+								e melhorar seus resultados nas finanças, nos relacionamentos e
+								na saúde.
 							</>
 						)}
 					</div>

@@ -8,7 +8,6 @@ export default function MentorSection() {
   const handleClick = () => {
     setIsSubmitting(true)
     
-    // Pequeno atraso para garantir que a página tenha tempo de renderizar completamente
     setTimeout(() => {
       const element = document.getElementById("hero")
       if (element) {
@@ -37,41 +36,38 @@ export default function MentorSection() {
 
           <div className="w-full md:w-3/5 md:pl-12 mt-[-150px] md:mt-0 p-10 md:p-0">
             <h2 className="text-2xl md:text-3xl text-custom-foreground mb-6 font-bold">
-              QUEM VAI SER O SEU
+              QUEM VAI TE GUIAR
               <br />
-              <span className="text-foreground">MENTOR NESSA JORNADA?</span>
+              <span className="text-foreground">NESSA JORNADA?</span>
             </h2>
 
             <h3 className="text-custom-primary-gold text-xl md:text-3xl mb-2 font-bold">Elton Euler</h3>
             <p className="text-custom-primary-gold mb-6 text-xl">Líder e Idealizador da Aliança Divergente</p>
 
             <div className="space-y-4 text-custom-foreground text-xl">
-              <p>Elton Euler é um dos maiores exemplos de superação e transformação da atualidade.</p>
-
               <p>
-                Antes de se tornar multimilionário e referência no desenvolvimento humano, quebrou 17 vezes e chegou a
-                acreditar que sua vida não tinha mais solução.
+                Elton Euler é empresário, mentor e estudioso do desenvolvimento humano, com anos de experiência ajudando pessoas a desenvolverem mais clareza sobre comportamento, decisões e crescimento pessoal.
               </p>
 
               <p>
-                Decidido a mudar sua história, Elton descobriu o que realmente bloqueava seus resultados e, em menos de
-                3 anos, saiu das dívidas e construiu uma vida de prosperidade.
+                Ao longo da própria trajetória, enfrentou desafios financeiros e profissionais que o levaram a buscar novos caminhos, hábitos e formas de enxergar a vida.
               </p>
 
               <p>
-                Hoje, já ajudou mais de 160 mil pessoas em 60 países a destravarem suas vidas financeiras, suas carreiras e suas relações emocionais com técnicas práticas e poderosas.
+                A partir dessa experiência, desenvolveu uma metodologia voltada para autoconhecimento, responsabilidade pessoal e construção de uma vida mais equilibrada em diferentes áreas.
               </p>
 
               <p>
-                Agora, ele vai te mostrar o que está faltando para você desbloquer sua Permissão e elevar sua vida a um
-                novo patamar.
+                Nesta jornada, Elton vai compartilhar reflexões, ferramentas e estratégias que podem ajudar você a enxergar padrões, ampliar sua percepção e tomar decisões com mais consciência.
               </p>
 
-              <p className="font-semibold text-center md:text-left">Você está pronto para descobrir?</p>
+              <p className="font-semibold text-center md:text-left">
+                Você está pronto para dar esse próximo passo?
+              </p>
             </div>
 
             <button onClick={handleClick} className="bg-custom-primary-gold text-custom-foreground mt-8 px-6 py-3 rounded-md font-medium mx-auto md:mx-0 block" disabled={isSubmitting}>
-              {isSubmitting ? "PROCESSANDO..." : "PARTICIPAR GRATUITAMENTE"}
+              {isSubmitting ? "PROCESSANDO..." : "QUERO ME INSCREVER "}
             </button>
           </div>
         </div>
@@ -79,4 +75,3 @@ export default function MentorSection() {
     </section>
   )
 }
-

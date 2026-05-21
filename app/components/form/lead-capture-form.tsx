@@ -70,7 +70,7 @@ export function LeadCaptureForm({
   phoneInputClassName,
   buttonClassName,
   defaultValues,
-  submitLabel = "QUERO SER LIVRE",
+  submitLabel = "QUERO ME INSCREVER",
   submittingLabel = "ENVIANDO...",
   submitError,
   onSubmit,

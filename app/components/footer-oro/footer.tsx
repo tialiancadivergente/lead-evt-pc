@@ -11,8 +11,8 @@ type FooterLdiProps = {
 };
 
 const LOGO_BY_VARIANT: Record<LogoVariant, string> = {
-  default: "/images/logo.png",
-  dark: "/images/v5/LOGO OLDI.png",
+  default: "/images/logo-resgate-dos-otimistas.png",
+  dark: "/images/logo-resgate-dos-otimistas.png",
 };
 
 export default function FooterOro({
@@ -39,11 +39,11 @@ export default function FooterOro({
             textColorClass
           )}
         >
-          Copyright © O Levante dos Improváveis. <br />
+          Copyright © O Resgate dos Otimistas. <br />
           Todos os direitos reservados.
         </div>
 
-        <Image src={logoSrc} alt="Risk" width={250} height={32} />
+        <Image src={logoSrc} alt="Risk" width={180} height={95} />
 
         <div
           className={cn(
@@ -51,7 +51,7 @@ export default function FooterOro({
             textColorClass
           )}
         >
-          Copyright © O Levante dos Improváveis. <br />
+          Copyright ©  O Resgate dos Otimistas. <br />
           Todos os direitos reservados.
         </div>
 
@@ -119,11 +119,11 @@ export default function FooterOro({
             textColorClass
           )}
         >
-          Os resultados podem variar de pessoa para pessoa. Este método tem
-          caráter educacional e de desenvolvimento pessoal, não garantindo
-          ganhos financeiros imediatos ou específicos. O sucesso depende da
-          aplicação prática de cada participante. Este site não é afiliado,
-          endossado ou patrocinado pelo Google ou Meta.
+          Os resultados podem variar de pessoa para pessoa. Este
+          método tem caráter educacional e de desenvolvimento pessoal, não
+          garantindo ganhos financeiros imediatos ou específicos. O sucesso depende
+          da aplicação prática de cada participante. Este site não é afiliado, endossado
+          ou patrocinado pelo Google Ads, Meta Ads ou TikTok Ads.
         </p>
       </div>
     </div>

@@ -14,7 +14,7 @@ export default function Biography() {
 				onClick={handleScroll}
 				className="w-full h-14 font-raleway font-extrabold text-[#000000] rounded-[50px] px-6 text-base uppercase tracking-wide transition-all hover:brightness-105 border-2 border-transparent [background:linear-gradient(90deg,_#90FF9F_0%,_#008A13_100%)_padding-box,_linear-gradient(180deg,_#90FF9F_0%,_#008A13_100%)_border-box] flex items-center justify-center gap-2"
 			>
-				<span>Participar gratuitamente</span>
+				<span>QUERO ME INSCREVER</span>
 				<ArrowUpRight size={18} strokeWidth={2.5} />
 			</button>
 		)
@@ -32,18 +32,17 @@ export default function Biography() {
 					</div>
 
 					<div className="font-raleway text-[#F4F0E1] text-[16px] md:text-[20px] my-8 max-w-[688px] mx-auto font-extralight md:text-center leading-relaxed">
-						<span className="font-bold">
-							Chega de dar o seu máximo e só ficar se perguntando o que faltou.
-						</span>{' '}
-						<span className="font-normal">
-							Pare de cometer o erro de sempre se perguntar
-						</span>{' '}
-						<span className="font-bold">
-							o que falta para você ter o resultado
-						</span>{' '}
-						<span className="font-normal">
-							que o seu esforço realmente merece.
-						</span>
+						<p>
+							O Resgate dos Otimistas é um treinamento online voltado para desenvolvimento pessoal, clareza emocional e tomada de decisão.
+						</p>
+
+						<p className="font-bold mt-4">
+							Ao longo do conteúdo, você terá acesso a reflexões, exercícios e estratégias para compreender melhor padrões de comportamento, organização da vida pessoal e construção de hábitos mais conscientes.
+						</p>
+
+						<p className="mt-4">
+							Uma experiência criada para pessoas que desejam evoluir com mais direção, responsabilidade e clareza sobre a própria trajetória.
+						</p>
 					</div>
 
 					<div className="max-w-[347px] mx-auto">
@@ -52,10 +51,10 @@ export default function Biography() {
 
 				</div>
 
-				<div className="flex justify-center md:justify-end mt-[800px] xs:mt-[850px] 2xs:mt-[900px] sm:mt-[1150px] md:mt-[535px] w-full">
+				<div className="flex justify-center md:justify-end mt-[620px] xs:mt-[670px] 2xs:mt-[720px] sm:mt-[920px] md:mt-[330px] w-full">
 					<div className="w-full max-w-[512px] text-[#D3CAC0]">
 						<div className="font-spectral text-2xl md:text-[32px] font-bold">
-							QUEM VAI SER O SEU MENTOR NESSA JORNADA?
+							QUEM VAI TE GUIAR NESSA JORNADA?
 						</div>
 
 						<div className="flex flex-col mt-4 mb-6 text-xl md:text-2xl font-bold">
@@ -69,27 +68,23 @@ export default function Biography() {
 
 						<div className="flex flex-col gap-6 font-extralight font-raleway">
 							<p>
-								Elton Euler é um dos maiores exemplos de superação e transformação da atualidade.
+								Elton Euler é empresário, mentor e estudioso do desenvolvimento humano, com anos de experiência ajudando pessoas a desenvolverem mais clareza sobre comportamento, decisões e crescimento pessoal.
 							</p>
 
 							<p>
-								Antes de se tornar multimilionário e referência no desenvolvimento humano, quebrou 17 vezes e chegou a acreditar que sua vida não tinha mais solução.
+								Ao longo da própria trajetória, enfrentou desafios financeiros e profissionais que o levaram a buscar novos caminhos, hábitos e formas de enxergar a vida.
 							</p>
 
 							<p>
-								Decidido a mudar sua história, Elton descobriu o que realmente bloqueava seus resultados e, em menos de 3 anos, saiu das dívidas e construiu uma vida de prosperidade.
+								A partir dessa experiência, desenvolveu uma metodologia voltada para autoconhecimento, responsabilidade pessoal e construção de uma vida mais equilibrada em diferentes áreas.
 							</p>
 
 							<p>
-								Hoje, já ajudou mais de 160 mil pessoas em 60 países a destravarem suas vidas financeiras, suas carreiras e suas relações emocionais com técnicas práticas e poderosas.
-							</p>
-
-							<p>
-								Agora, ele vai te mostrar o que está faltando para você desbloquer sua Permissão e elevar sua vida a um novo patamar.
+								Nesta jornada, Elton vai compartilhar reflexões, ferramentas e estratégias que podem ajudar você a enxergar padrões, ampliar sua percepção e tomar decisões com mais consciência.
 							</p>
 
 							<p className="font-bold">
-								Você está pronto para descobrir?
+								Você está pronto para dar esse próximo passo?
 							</p>
 
 							<ButtonParticipate />

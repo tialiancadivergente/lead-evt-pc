@@ -258,14 +258,14 @@ export default function HeroSection() {
             <div className="text-[#f4f0e1] text-lg mb-4 font-medium">
               <span className="text-[#f4f0e1]">Preencha os campos abaixo agora:</span>
             </div>
-            <div className="w-full max-w-md mx-auto md:mx-0">
+            <div className="w-full max-w-full md:max-w-md mx-auto md:mx-0">
               <LeadCaptureForm
                 formName={launch}
                 onSubmit={handleLeadCaptureSubmit}
                 submitError={submitError}
                 emailInputClassName="w-full px-4 py-3 rounded-md bg-[#f4f0e1]/90 text-[#07242c] border border-gray-300"
-                ddiSelectClassName="py-3 pl-10 pr-2 rounded-l-md bg-[#f4f0e1]/90 text-[#07242c] border-r border-gray-300 focus:ring-0 focus:outline-none border border-gray-300"
-                phoneInputClassName="flex-1 px-4 py-3 rounded-r-md bg-[#f4f0e1]/90 text-[#07242c] focus:outline-none border border-gray-300"
+                ddiSelectClassName="py-3 pl-3 pr-2 rounded-l-md bg-[#f4f0e1]/90 text-[#07242c] border-r border-gray-300 focus:ring-0 focus:outline-none border border-gray-300"
+                phoneInputClassName="flex-1 min-w-0 px-3 md:px-4 py-3 rounded-r-md bg-[#f4f0e1]/90 text-[#07242c] focus:outline-none border border-gray-300"
                 buttonClassName="w-full bg-custom-primary-gold text-white font-medium py-3 px-6 rounded-md transition-all hover:brightness-110 uppercase text-sm tracking-wider"
               />
             </div>
