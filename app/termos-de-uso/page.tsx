@@ -22,7 +22,7 @@ export default function TermosDeUso() {
           </p>
 
           <p>
-            Estes Termos de Uso regem o acesso e utilização da página de inscrição disponibilizada pela <strong>AEON LTDA</strong>, pessoa jurídica de direito privado, inscrita no CNPJ n. 48.424.807/0001-88.
+            Estes Termos de Uso regem o acesso e utilização da página de inscrição disponibilizada pela <strong>AEON LTDA</strong>, pessoa jurídica de direito privado, inscrita no CNPJ n. 59.301.463.0001-36.
           </p>
 
           <p>

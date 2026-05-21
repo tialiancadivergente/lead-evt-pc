@@ -58,7 +58,7 @@ export default function FooterOro({
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center space-x-2">
             <Link
-              href="https://www.oresgatedosotimistas.com.br/politica-de-privacidade"
+              href="https://www.eventopontocego.com/politica-de-privacidade"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
@@ -79,7 +79,7 @@ export default function FooterOro({
             </span>
 
             <Link
-              href="https://www.oresgatedosotimistas.com.br/termos-de-uso"
+              href="https://www.eventopontocego.com/termos-de-uso"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(

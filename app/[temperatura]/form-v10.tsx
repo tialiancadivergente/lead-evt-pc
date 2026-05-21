@@ -345,7 +345,7 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
             <div className="font-normal font-raleway text-[14px] text-white text-center lg:text-right order-3">
               <div className="flex items-center justify-center lg:justify-end gap-3 flex-wrap">
                 <a
-                  href="https://www.oresgatedosotimistas.com.br/politica-de-privacidade"
+                  href="https://www.eventopontocego.com/politica-de-privacidade"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
@@ -356,7 +356,7 @@ export default function Formv10({ logoVariant = "default" }: Formv10Props) {
                 <span>|</span>
 
                 <a
-                  href="https://www.oresgatedosotimistas.com.br/termos-de-uso"
+                  href="https://www.eventopontocego.com/termos-de-uso"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
