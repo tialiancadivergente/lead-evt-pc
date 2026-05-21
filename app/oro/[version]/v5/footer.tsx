@@ -54,7 +54,6 @@ export default function Footer() {
 
 						<div className="mt-1 text-[14px]">
 							<p>
-								ALIANCA DIVERGENTE LTDA
 							</p>
 
 							<p>
