@@ -97,7 +97,7 @@ export default function FooterOro({
               textColorClass
             )}
           >
-            ALIANCA DIVERGENTE LTDA - CNPJ: 59.301.463.0001-36
+             CNPJ: 59.301.463.0001-36
             <br />
           </p>
         </div>
