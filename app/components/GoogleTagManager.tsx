@@ -11,8 +11,8 @@ const GoogleTagManager = () => {
     const userIp = useUserIP(); // Captura o IP no carregamento
     console.log('meu ip =>', userIp);
     useEffect(() => {
-        const defaultGtmId = 'GTM-PT8FKTDN';
-        const oroOrgGtmId = 'GTM-KDPHP732';
+        const defaultGtmId = 'GTM-NFTFKWCM';
+        const oroOrgGtmId = 'GTM-NFTFKWCM';
         const normalizedTemperature = (Array.isArray(temperature) ? temperature[0] : temperature || '').toLowerCase();
 
         const getGtmIdByHostname = (hostname: string) => {
@@ -24,9 +24,9 @@ const GoogleTagManager = () => {
 
             // Mapeamento por subdomínio específico
             const map: Record<string, string> = {
-                mt: 'GTM-K72SR8R4',
-                gg: 'GTM-NNCP73G5',
-                tt: 'GTM-WD86PJNQ',
+                mt: 'GTM-NFTFKWCM',
+                gg: 'GTM-NFTFKWCM',
+                tt: 'GTM-NFTFKWCM',
             };
 
             // Se houver correspondência exata para o primeiro label, usa-a
